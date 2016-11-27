@@ -1,0 +1,19 @@
+{
+  "name": "vue-dropdown-menu",
+  "version": "0.0.1",
+  "description": "vue dropdown menu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vmaimone/vue-dropdown-menu.git"
+  },
+  "author": "vin maimone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vmaimone/vue-dropdown-menu/issues"
+  },
+  "homepage": "https://github.com/vmaimone/vue-dropdown-menu#readme"
+}
