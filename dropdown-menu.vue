@@ -6,7 +6,7 @@
       :aria-expanded="isOpen"
       :disabled="disabled">
       <span v-html="text || ''"></span>
-      <i v-if="iconClass" :style="{'margin-left': text ? '.25rem': ''}" :class="iconClass"></i>
+      <i v-if="iconClass" :style="{'margin-left': text ? '.5rem': ''}" :class="iconClass"></i>
     </button>
     <ul class="dropdown-menu" @click="hide()">
       <slot></slot>
