@@ -1,6 +1,7 @@
 <template>
   <div :class="{ open: isOpen, dropdown: true, dropup: false }">
     <button
+      type="button"
       @click="toggle($event)"
       :class="{ 'button': true, 'is-small': isSmall, 'is-large': isLarge, 'is-inverted': isInverted }"
       :aria-expanded="isOpen"
@@ -8,7 +9,7 @@
       <span v-html="text || ''"></span>
       <i v-if="iconClass" :style="{'margin-left': text ? '.5rem': ''}" :class="iconClass"></i>
     </button>
-    <ul class="dropdown-menu" @click="hide()">
+    <ul class="dropdown-menu fa-ul" @click="hide()">
       <slot></slot>
     </ul>
   </div>
