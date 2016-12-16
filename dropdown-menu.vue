@@ -51,6 +51,13 @@
         default: ''
       }
     },
+    
+    mounted() {
+      if(!LISTENER_IS_ATTACHED) {
+        document.addEventListener('click', dropdownListener)
+        LISTENER_IS_ATTACHED = true
+      }
+    },
 
     methods: {
       toggle(e) {
@@ -73,6 +80,13 @@
           this.$emit('hide', this.$data)
         }
       }
+    }
+  }
+  var LISTENER_IS_ATTACHED = false
+  function dropdownListener(event) {
+    let el = document.querySelector('.dropdown.open')
+    if (el && el.__vue__ ) {
+      if(el.__vue__.isOpen) el.__vue__.isOpen = false
     }
   }
 </script>
